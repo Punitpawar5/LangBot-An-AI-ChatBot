@@ -4,7 +4,7 @@ It features a **modern Streamlit UI**, conversation history management, and anal
 
 **Primary Use Cases:**
 - General Q&A
-- Searching custom knowledge bases
+- Searching custom knowledge bases(RAG)
 - Performing web searches
 - Answering math problems
 - Maintaining multiple conversation threads
@@ -29,13 +29,12 @@ It features a **modern Streamlit UI**, conversation history management, and anal
   - Human-in-the-loop approval
 - Custom tools:
   - Web Search (DuckDuckGo)
-  - Weather (placeholder)
+  - Weather
   - Math Calculator
   - Knowledge Base Search (Chroma + Embeddings)
 - Document ingestion & chunking for RAG
 
 ---
-
 ## Tech Stack
 - **Frontend:** Streamlit, HTML/CSS, Markdown Rendering
 - **Backend:** Python, LangChain, LangGraph, Google Gemini API, ChromaDB, PyPDF, TextLoader
@@ -43,3 +42,58 @@ It features a **modern Streamlit UI**, conversation history management, and anal
 - **Environment:** `python-dotenv`
 
 ---
+## Installation
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Punitpawar5/LangBot-An-AI-ChatBot.git
+cd LangBot-An-AI-ChatBot
+```
+
+2. Create a virtual environment:
+   
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
+```
+3: Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4: Create .env file based on .env.example:
+```bash
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+## Usage
+
+Run the Streamlit app:
+ ```bash
+streamlit run enhanced_frontend.py
+```
+Open the browser at http://localhost:8501 and start chatting with the AI assistant.
+
+## Architecture
+```bash
+Streamlit UI → LangGraph Chatbot → Gemini Model
+                 ↓        ↑
+               Tools (search, RAG, math, weather)
+                 ↓
+            External APIs / Vector DB
+```
+
+## Next Steps
+
+Integrate a real weather API (e.g., OpenWeatherMap)
+
+Replace DuckDuckGo with SerpAPI or Tavily for reliable web search
+
+UI improvements: auto-scroll, dark mode, collapsible chat history
+
+Voice mode: speech-to-text input, text-to-speech output
+
+Deploy to Streamlit Cloud, Hugging Face Spaces, or a VPS
