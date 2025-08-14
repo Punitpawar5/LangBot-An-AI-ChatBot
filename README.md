@@ -44,7 +44,9 @@ It features a **modern Streamlit UI**, conversation history management, and anal
 ---
 
 ## Demo Screenshots
+Check out LinkedIn post about this project demo [here](https://www.linkedin.com/posts/punit-pawar5_ai-llm-langchain-activity-7361654454221234176-nIEJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6bOdEBDSmX6bWWuAxedYglTGFE7pygkwU)
 
+Demo images
 ![LangBot Chat UI](https://github.com/Punitpawar5/LangBot-An-AI-ChatBot/blob/main/Screenshot%20(256).png)
 ![Knowledge Base Search](https://github.com/Punitpawar5/LangBot-An-AI-ChatBot/blob/main/Screenshot%20(258).png)
 
