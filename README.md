@@ -42,6 +42,12 @@ It features a **modern Streamlit UI**, conversation history management, and anal
 - **Environment:** `python-dotenv`
 
 ---
+
+## Demo Screenshots
+
+![LangBot Chat UI](https://github.com/Punitpawar5/LangBot-An-AI-ChatBot/blob/main/Screenshot%20(256).png)
+![Knowledge Base Search](https://github.com/Punitpawar5/LangBot-An-AI-ChatBot/blob/main/Screenshot%20(258).png)
+
 ## Installation
 
 1. Clone the repo:
